@@ -1,8 +1,9 @@
+
 const ElectronicCategoryCard = () => {
     return (
-         <div >
+         <div className="flex gap-3 flex-col justify-center items-center goutp">
             <img className="object-contain h-10" src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/k/t/y/-original-imahg53xspmfrsdd.jpeg?q=70"alt="" />
-            <h2 className='font-semibold text-secondary-color'></h2>
+            <h2 className='font-semibold text-secondary-color'>Laptop</h2>
         </div>
     );
 }

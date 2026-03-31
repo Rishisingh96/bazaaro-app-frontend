@@ -1,5 +1,5 @@
 import React from 'react';
-import ElectronicCategoryCard from '../ElectronicCategoryCard';
+import ElectronicCategoryCard from './ElectronicCategoryCard';
 
 
 const ElectricCategory = () => {
