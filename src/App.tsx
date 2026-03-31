@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { ThemeProvider } from '@mui/material/styles';
+import Navbar from './customer/Navbar/Navbar';
+import Home from './customer/pages/Home/Home';
+import customeTheme from './Theme/customeTheme';
+import Deal from './customer/pages/Home/Deal/Deal';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <ThemeProvider theme={customeTheme}>
+        <div>
+          <Navbar />
+          <Home />
+          <Deal />
+      </div>
+      </ThemeProvider>
+  )
+
 }
 
 export default App;
+
+
+
+  {/* //  <div>
+  //   <h1 className='text-4xl text-center font-bold text-red-500'>Hello Rishi !</h1>
+
+  //   <Button variant="contained">Rishi tha button</Button>
+  // {/* //  <Button variant="contained">Rishi tha button</Button> */}
+  // <AddShoppingCartIcon color="primary" fontSize="large" />
+  //  </div>
+  // ); */}
