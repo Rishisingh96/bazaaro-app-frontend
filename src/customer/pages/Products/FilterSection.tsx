@@ -1,11 +1,51 @@
-import React from 'react'
+import {
+  Button,
+  Divider,
+  FormControl,
+  FormControlLabel,
+  FormLabel,
+  Radio,
+  RadioGroup,
+} from "@mui/material";
+import { teal } from "@mui/material/colors";
+import React from "react";
 
 const FilterSection = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <div className="-z-50 space-y-5 bg-white">
+      <div className="flex items-center justify-between h-[40px] px-9 lg:border-r">
+        <p className="text-lg font-semibold">Filters</p>
+        <Button
+          size="small"
+          className="text-teal-600 cursor-pointer font-semibold"
+        >
+          clear
+        </Button>
+      </div>
+      <Divider />
 
-export default FilterSection
+      <FormControl>
+        <FormLabel 
+         sx={{
+          fontSize:"16px",
+          fontWeight:"bold",
+          color:teal[500],
+          pb:"14px"
+        }}
+        className="text-2xl font-semibold">Color</FormLabel>
+       
+        <RadioGroup
+          aria-labelledby="color"
+          defaultValue=""
+          name="color"
+        >
+          <FormControlLabel value="female" control={<Radio />} label="Female" />
+          <FormControlLabel value="male" control={<Radio />} label="Male" />
+          <FormControlLabel value="other" control={<Radio />} label="Other" />
+        </RadioGroup>
+      </FormControl>
+    </div>
+  );
+};
+
+export default FilterSection;

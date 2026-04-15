@@ -11,3 +11,19 @@ code{
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+  .card {
+    @apply relative w-[250px] h-[350px] overflow-hidden;
+  }
+
+  .group-hover-effect {
+    @apply p-4 transition-transform duration-300;
+  }
+
+  .group:hover .group-hover-effect {
+    transform: translateY(0.25rem);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}

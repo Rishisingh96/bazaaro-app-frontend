@@ -30,6 +30,18 @@ export const homeCategory = [
         parentCategoryId: "men",
         level: 2,
       },
+           {
+        name: "Personal Care And Grooming",
+        categoryId: "men_persional_care_and_grooming",
+        parentCategoryId: "men",
+        level: 2,
+      },
+      {
+        name: "Fashion Accessories",
+        categoryId: "men_fashion_accessories",
+        parentCategoryId: "men",
+        level: 2,
+      }
     ],
   },
 
@@ -38,19 +50,48 @@ export const homeCategory = [
     CategoryId: "women",
     level:1,
     levelTowCategory:[
-        {
-            "parentCategoryId":"women",
-            "level":2,
-            "name":"India & fusion Wear",
-            "categoryId": "women_indian_and_fusion_wear"
-        },
-        {
-            
-            "parentCategoryId":"women",
-            "level":2,
-            "name":"western wear",
-            "categoryId": "women_western_wear"
-        }
+    {
+      name: "Indian & Fusion Wear",
+      categoryId: "women_indian_and_fusion_wear",
+      parentCategoryId: "women",
+      level: 2
+    },
+    {
+      name: "Western Wear",
+      categoryId: "women_western_wear",
+      parentCategoryId: "women",
+      level: 2
+    },
+    {
+      name: "Lingerie & Sleepwear",
+      categoryId: "women_lingerie_sleepwear",
+      parentCategoryId: "women",
+      level: 2
+    },
+    {
+      name: "Footwear",
+      categoryId: "women_footwear",
+      parentCategoryId: "women",
+      level: 2
+    },
+    {
+      name: "Beauty & Personal Care",
+      categoryId: "women_beauty_personal_care",
+      parentCategoryId: "women",
+      level: 2
+    },
+    {
+      name: "Jewellery",
+      categoryId: "women_jewellery",
+      parentCategoryId: "women",
+      level: 2
+    },
+    {
+      name: "Accessories",
+      categoryId: "women_accessories",
+      parentCategoryId: "women",
+      level: 2
+    }
     ]
   },
 
@@ -61,6 +102,13 @@ export const homeCategory = [
   },
 
   {
-    name:"Electronics", CategoryId: "electronics", level:1
+    name:"Electronics", 
+    CategoryId: "electronics",
+    level:1
   },
+  {
+    name: "Multiservice",
+    categoryId: "multiservice",
+    level: 1,
+  }
 ];
