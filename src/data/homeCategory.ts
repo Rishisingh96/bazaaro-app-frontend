@@ -47,9 +47,9 @@ export const homeCategory = [
 
   {
     name: "Women", 
-    CategoryId: "women",
+    categoryId: "women",
     level:1,
-    levelTowCategory:[
+    levelTwoCategory:[
     {
       name: "Indian & Fusion Wear",
       categoryId: "women_indian_and_fusion_wear",
@@ -103,12 +103,82 @@ export const homeCategory = [
 
   {
     name:"Electronics", 
-    CategoryId: "electronics",
-    level:1
+    categoryId: "electronics",
+    level:1,
+    levelTwoCategory: [
+      {
+        name: "Mobiles & Accessories",
+        categoryId: "electronics_mobiles_accessories",
+        parentCategoryId: "electronics",
+        level: 2
+      },
+      {
+        name: "Laptops & Computers",
+        categoryId: "electronics_laptops_computers",
+        parentCategoryId: "electronics",
+        level: 2
+      },
+      {
+        name: "TV & Home Entertainment",
+        categoryId: "electronics_tv_home_entertainment",
+        parentCategoryId: "electronics",
+        level: 2
+      },
+      {
+        name: "Audio Devices",
+        categoryId: "electronics_audio_devices",
+        parentCategoryId: "electronics",
+        level: 2
+      },
+      {
+        name: "Cameras & Photography",
+        categoryId: "electronics_cameras_photography",
+        parentCategoryId: "electronics",
+        level: 2
+      },
+      {
+        name: "Wearable Devices",
+        categoryId: "electronics_wearables",
+        parentCategoryId: "electronics",
+        level: 2
+      },
+      {
+        name: "Home Appliances",
+        categoryId: "electronics_home_appliances",
+        parentCategoryId: "electronics",
+        level: 2
+      }
+    ]
   },
   {
     name: "Multiservice",
     categoryId: "multiservice",
     level: 1,
+    levelTwoCategory: [
+      {
+        name: "Document Services",
+        categoryId: "ms_document_services",
+        parentCategoryId: "multiservice",
+        level: 2
+      },
+      {
+        name: "Photo & Album Services",
+        categoryId: "ms_photo_album_services",
+        parentCategoryId: "multiservice",
+        level: 2
+      },
+      {
+        name: "Custom Design & Event Printing",
+        categoryId: "ms_event_printing",
+        parentCategoryId: "multiservice",
+        level: 2
+      },
+      {
+        name: "Custom Gift Printing",
+        categoryId: "ms_gift_printing",
+        parentCategoryId: "multiservice",
+        level: 2
+      }
+    ]
   }
 ];

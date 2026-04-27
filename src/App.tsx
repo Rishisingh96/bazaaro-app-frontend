@@ -3,7 +3,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import Navbar from './customer/Navbar/Navbar';
 import Home from './customer/pages/Home/Home';
 import customeTheme from './Theme/customeTheme';
-import Deal from './customer/pages/Home/Deal/Deal';
+import { ProductDetails } from './customer/pages/Products/ProductDetails/ProductDetails';
 import Product from './customer/pages/Products/Product';
 
 function App() {
@@ -12,8 +12,10 @@ function App() {
         <div>
           <Navbar />
           {/* <Home /> */}
-          <Product />
-      </div>
+          {/* <Product /> */}
+          {/* <AddMoreFeature />*/}
+          <ProductDetails />
+        </div>
       </ThemeProvider>
   )
 

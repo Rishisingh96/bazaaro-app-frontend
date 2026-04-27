@@ -32,6 +32,7 @@ const Navbar = () => {
                             // ['Men','Women','Home & furniture','Electronics']
                             homeCategory.map((item) => 
                                 <li 
+                                key={item.categoryId}
                                 onMouseLeave={()=>{
                                     setShowCategorySheet(false);
                                 }}

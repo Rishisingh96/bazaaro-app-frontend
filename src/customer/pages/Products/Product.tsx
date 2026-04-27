@@ -5,6 +5,7 @@ import {
   IconButton,
   InputLabel,
   MenuItem,
+  Pagination,
   Select,
   useMediaQuery,
   useTheme,
@@ -19,9 +20,14 @@ const Product = () => {
   const isLarge = useMediaQuery(theam.
   breakpoints.up("lg"));
   const [sort, setSort] = useState()
+  const [page, setPage] = useState(1);
 
   const handleSortChange = (event:any)=>{
     setSort(event.target.value)
+  }
+
+  const handlePageChange = (value:number) =>{
+    setPage(value)
   }
   return (
     <div className="-z-10 mt-10">
@@ -66,13 +72,20 @@ const Product = () => {
               </Select>
             </FormControl>
           </div>
-
+          
           <Divider />
           <section className="product_section grid sm:grid-cols-2 md:grid-col-3 lg:grid-cols-4 gap-y-5 px-5 justify-center" >
             {[1,1,1,1,1,1,1,1,1].map((item) => <ProductCard />)}
-            
           </section>
+            {/* Paginationo */}
+          <div className="flex justify-center py-10">
+          <Pagination count={10} 
+          onChange={(e,value) =>handlePageChange(value)}
+          variant="outlined" 
+          color="primary"
+          />
         </div>
+        </div>      
       </div>
     </div>
   );
